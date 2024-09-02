@@ -1,0 +1,122 @@
+.navbar-header img {
+    filter: grayscale(100%) brightness(1.2);
+    height: 3.8rem;
+    border-radius: var(--border-radius);
+}
+
+.navbar-header h6 {
+    font-weight: lighter;
+    color: var(--color-grey);
+    margin-bottom: 0.7rem;
+}
+
+.navbar-header {
+    margin-top: 1.6rem;
+    border-bottom: 1px dashed var(--color-transparent);
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-sidebar {
+    margin: 0 2rem;
+    border-right: 1px solid var(--color-transparent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 17rem;
+    z-index: 1000;
+}
+
+.navbar-sidebar ul {
+    padding: 0;
+}
+
+.navbar-sidebar li {
+    margin: 1rem 0;
+}
+
+.navbar-sidebar a {
+    transition: color 0.3s ease;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navbar-sidebar a:hover {
+    color: var(--color-light);
+}
+
+.navbar-lists {
+    color: var(--color-grey);
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-socials {
+    border-top: 1px dashed var(--color-transparent);
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-footer p {
+    margin-bottom: -0.4rem;
+}
+
+.navbar-mobileheader a {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+
+    .navbar-sidebar {
+        margin: 0;
+        height: auto;
+        width: 100%;
+        border-bottom: 1px solid var(--color-transparent);
+    }
+
+    .navbar-lists {
+        display: none;
+    }
+
+    .navbar-lists.active {
+        margin-left: 2rem;
+        display: flex;
+    }
+
+    .navbar-header {
+        margin: 1rem;
+        margin-bottom: 0.5rem;
+        border-bottom: none;
+    }
+
+    .navbar-header h5 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-header h6 {
+        font-size: 1rem;
+
+    }
+
+    .navbar-mobileheader {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-right: 0.6rem;
+    }
+
+    .navbar-mobileheader a {
+        display: flex;
+    }
+
+    .navbar-header img {
+        height: 3rem;
+    }
+
+}
