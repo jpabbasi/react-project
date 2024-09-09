@@ -73,9 +73,3 @@ h5, h6, h1 {
   background-color: var(--color-transparent);
   border: 1px solid var(--color-transparent);
 }
-
-.rowFlex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
