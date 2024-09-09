@@ -1,0 +1,28 @@
+.stack-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.stack-item img {
+    height: 50px;
+    width: auto;
+}
+
+.stack-item h6 {
+    color: var(--color-grey);
+}
+
+.stacks-grid {
+    padding-top: 1rem;
+    display: grid;
+    gap: 3rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .stacks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
