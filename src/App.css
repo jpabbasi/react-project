@@ -1,4 +1,18 @@
 .main-content {
-    padding: 2rem;
-    margin-left: 17rem;
+    padding: 5rem 25rem;
+    margin-left: 21rem;
+}
+
+@media (max-width: 1025px) {
+    .main-content {
+        padding: 2rem;
+        margin-left: 0;
+        margin-top: 7rem;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 2000px) {
+    .main-content {
+        padding: 5rem 10rem;
+    }
 }
