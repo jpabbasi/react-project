@@ -1,0 +1,14 @@
+.home-header p {
+    color: var(--color-grey);
+}
+
+.home-headerbuttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.home-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
