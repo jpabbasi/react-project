@@ -19,13 +19,14 @@
 }
 
 .navbar-sidebar {
+    background-color: var(--color-primary);
     margin: 0 2rem;
     border-right: 1px solid var(--color-transparent);
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 17rem;
+    width: 18rem;
     z-index: 1000;
 }
 
@@ -112,6 +113,7 @@
     }
 
     .navbar-mobileheader a {
+        color: var(--color-grey);
         display: flex;
     }
 

@@ -4,6 +4,7 @@ import { TbBriefcase } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
+import { TbDeviceDesktop } from "react-icons/tb";
 
 export const tabs = [
     {
@@ -15,6 +16,11 @@ export const tabs = [
         title: 'About',
         link: '/about',
         icon: <TbUser />
+    },
+    {
+        title: 'Projects',
+        link: '/projects',
+        icon: <TbDeviceDesktop />
     },
     {
         title: 'Services',
