@@ -22,7 +22,7 @@ const Home = () => {
     </div>
     <div>
 
-    <div className='rowFlex'>
+    <div className='projects-flex'>
       <h3>Selected Projects</h3>
       <a className='btn secondary' href="/projects">Check All Projects</a>
     </div>
