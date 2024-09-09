@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary: #181414;
   --color-light: #f9f9f9;
   --color-grey: #a0a0a0 ;
   --color-transparent: #f9f9f92f;
+  --color-transparent-2: #f9f9f90c;
+  --color-transparent-3: #171717c5;
   --border-radius: 4px;
 }
 
@@ -29,14 +35,47 @@ ul {
 }
 
 h5 {
+  font-weight: normal;
   font-size: 1.5rem;
 }
 
 h6 {
+  font-weight: normal;
   font-size: 1.2rem;
 }
 
-h5, h6 {
-  font-weight: normal;
+h5, h6, h1 {
   margin: 0;
+}
+
+.btn {
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  border-radius: var(--border-radius);
+}
+
+.btn.primary {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+.btn.primary:hover {
+  background-color: var(--color-transparent);
+  color: var(--color-light);
+}
+
+.btn.secondary {
+  background-color: var(--color-transparent-2);
+  border: 1px solid var(--color-transparent);
+}
+
+.btn.secondary:hover {
+  background-color: var(--color-transparent);
+  border: 1px solid var(--color-transparent);
+}
+
+.rowFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
