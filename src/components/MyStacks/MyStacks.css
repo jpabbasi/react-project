@@ -5,12 +5,13 @@
 }
 
 .stack-item img {
-    height: 50px;
+    height: 30px;
     width: auto;
 }
 
-.stack-item h6 {
+.stack-item p {
     color: var(--color-grey);
+    margin: 0;
 }
 
 .stacks-grid {
@@ -24,5 +25,6 @@
 @media (max-width: 768px) {
     .stacks-grid {
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
     }
 }

@@ -8,8 +8,8 @@ const MyStacks = () => {
         <div className="stack-item">
             <img src={stack.icon} alt="react" />
             <div className='stack-texts'>
-                <h5>{stack.title}</h5>
-                <h6>{stack.subtitle}</h6>
+                <h6>{stack.title}</h6>
+                <p>{stack.subtitle}</p>
             </div>
         </div>
     ))
